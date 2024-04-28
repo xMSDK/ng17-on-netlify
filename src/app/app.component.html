@@ -1,0 +1,20 @@
+
+<div class="navbar" [ngClass]="{'home__navbar': showContent}">
+  <app-sidebar></app-sidebar>
+  <div class="logo"  *ngIf="!showContent" routerLink="/">
+    <img src="../assets/logo.png" height="50"/>
+  </div>
+</div>
+
+<video autoplay muted loop  *ngIf="showContent">
+  <source src="../assets/home.mp4" type="video/mp4">
+</video>
+
+
+<div class="content" *ngIf="!showContent">
+  <router-outlet></router-outlet>
+</div>
+
+<div *ngIf="!showContent">
+  <app-footer></app-footer>
+</div>

@@ -1,0 +1,56 @@
+<button (click)="toggleSidebar()" class="sidebar__burger-menu" [style.color]="isHomePage ? 'white' : 'black'" *ngIf="!sidebarOpen">
+  ☰
+</button>
+
+
+<nav class="sidebar" [class.active]="sidebarOpen" [ngClass]="{'transparent': isHomePage}">
+    <button class="sidebar__close-button" (click)="toggleSidebar()" [style.color]="isHomePage ? 'white' : 'black'">X</button>
+    <ul>
+        <li><a [routerLink]="['']" [style.color]="isHomePage ? 'white' : 'black'">
+            <span>ACCU</span>
+            <span class="sidebar__links__items__letter-e" >E
+                <span class="sidebar__links___items__horizontal-bar-top" [style.background-color]="isHomePage ? 'white' : 'black'"></span>
+                <span class="sidebar__links___items__horizontal-bar-mid" [style.background-color]="isHomePage ? 'white' : 'black'"></span>
+                <span class="sidebar__links___items__horizontal-bar-bottom" [style.background-color]="isHomePage ? 'white' : 'black'"></span>
+            </span>
+            <span class="sidebar__links__items__letter-e-end">IL</span>
+        </a></li>
+        <li><a [routerLink]="['/notre-vision']" [style.color]="isHomePage ? 'white' : 'black'">
+            <span>QUI SOMM</span>
+            <span class="sidebar__links__items__letter-e">E
+                <span class="sidebar__links___items__horizontal-bar-top" [style.background-color]="isHomePage ? 'white' : 'black'"></span>
+                <span class="sidebar__links___items__horizontal-bar-mid" [style.background-color]="isHomePage ? 'white' : 'black'"></span>
+                <span class="sidebar__links___items__horizontal-bar-bottom" [style.background-color]="isHomePage ? 'white' : 'black'"></span>
+            </span>
+            <span class="sidebar__links__items__letter-e-end">S-NOUS ?</span>
+        
+        </a></li>
+        <li> <a [routerLink]="['/nos-partenaires']" [style.color]="isHomePage ? 'white' : 'black'">
+            <span>NOS PART</span>
+            <span class="sidebar__links__items__letter-e">E
+                <span class="sidebar__links___items__horizontal-bar-top" [style.background-color]="isHomePage ? 'white' : 'black'"></span>
+                <span class="sidebar__links___items__horizontal-bar-mid" [style.background-color]="isHomePage ? 'white' : 'black'"></span>
+                <span class="sidebar__links___items__horizontal-bar-bottom" [style.background-color]="isHomePage ? 'white' : 'black'"></span>
+            </span>
+            <span class="sidebar__links__items__letter-e-end">NAIRES</span>
+        </a></li>
+        <li><a [routerLink]="['/nos-talents']" [style.color]="isHomePage ? 'white' : 'black'">
+            <span>NOS TAL</span>
+            <span class="sidebar__links__items__letter-e">E
+                <span class="sidebar__links___items__horizontal-bar-top" [style.background-color]="isHomePage ? 'white' : 'black'"></span>
+                <span class="sidebar__links___items__horizontal-bar-mid" [style.background-color]="isHomePage ? 'white' : 'black'"></span>
+                <span class="sidebar__links___items__horizontal-bar-bottom" [style.background-color]="isHomePage ? 'white' : 'black'"></span>
+            </span>
+            <span class="sidebar__links__items__letter-e-end">NTS</span>
+        </a></li>
+        <li><a [routerLink]="['/contactez-nous']" [style.color]="isHomePage ? 'white' : 'black'">
+            <span>CONTACT</span>
+            <span class="sidebar__links__items__letter-e">E
+                <span class="sidebar__links___items__horizontal-bar-top" [style.background-color]="isHomePage ? 'white' : 'black'"></span>
+                <span class="sidebar__links___items__horizontal-bar-mid" [style.background-color]="isHomePage ? 'white' : 'black'"></span>
+                <span class="sidebar__links___items__horizontal-bar-bottom" [style.background-color]="isHomePage ? 'white' : 'black'"></span>
+            </span>
+            <span class="sidebar__links__items__letter-e-end">Z-NOUS</span>
+        </a></li>
+      </ul>
+</nav>

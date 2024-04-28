@@ -1,0 +1,61 @@
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.navbar {
+    padding: 20px;
+    position: sticky;
+    top: 0; /* Ajustez cette valeur en fonction de la hauteur de votre logo */
+    z-index: 999; /* Assurez-vous que la barre de navigation reste au-dessus du contenu */
+    background-color: white; /* Ajoutez une couleur de fond pour la barre de navigation */
+    height: 80px;   
+}
+
+.home__navbar {
+    background-color: transparent;
+    margin: 0px !important;
+    padding: 0px !important;
+    height: 0px;
+}
+
+.content {
+    padding-top: 50px; /* Ajoutez un padding pour compenser la hauteur de la barre de navigation */
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 70px;
+}
+
+video {
+    width: 100vw; height: 100vh; object-fit: cover;
+}
+
+
+.logo-white {
+    filter: brightness(100%) saturate(0%) invert(100%);
+}
+/* Pour les écrans plus petits, tels que les tablettes et les téléphones */
+@media screen and (max-width: 768px) {
+    .content {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/* Pour les écrans encore plus petits, tels que les téléphones mobiles */
+@media screen and (max-width: 576px) {
+    .content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+

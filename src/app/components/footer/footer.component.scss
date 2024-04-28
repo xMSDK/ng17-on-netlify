@@ -1,0 +1,58 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    color: white;
+  }
+  .footer__logo {
+    cursor: pointer;
+  }
+
+  .footer__logo img {
+    width: 100px;
+
+  }
+
+  .footer__copyright {
+    color: black;
+    text-align: center;
+  }
+
+  .footer__copyright a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer__social img {
+    margin: 0 10px;
+  }
+  
+  .footer__contact-link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer__contact-link:hover {
+    text-decoration: underline;
+  }
+
+  .banner {
+    height: 150px;
+    width: 100%;
+    background-image: url('../../../assets/fond.jpeg');
+  }
+  
+
+  @media screen and (max-width: 425px) {
+    .footer {
+      width: auto;
+      flex-direction: column; /* Change la direction en colonne pour les écrans de taille moyenne */
+      text-align: center; /* Centre le contenu dans la colonne */
+    }
+  
+    .footer__social {
+      margin-top: 20px; /* Ajoute un espacement entre le texte et les icônes sociales */
+    }
+  }

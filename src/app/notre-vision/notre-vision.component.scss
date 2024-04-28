@@ -1,0 +1,253 @@
+.about-us {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 70px;
+}
+
+.cercle {
+    width: 250px; /* Définissez la largeur et la hauteur du cercle */
+    height: 250px;
+    border-radius: 50%; /* Définissez le rayon pour créer un cercle */
+    overflow: hidden; /* Cache tout ce qui dépasse du cercle */
+    filter: grayscale(100%);
+  }
+  
+  .cercle img {
+    width: 100%; /* Assurez-vous que l'image remplit le cercle */
+    height: auto;
+    display: block;
+  }
+
+.about-us p {
+    padding: 40px;
+    color: gray;
+}
+
+.about-us__img {
+    width: 60%;
+}
+
+.about-us__description {
+    margin-top: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-us__img img {
+    width: 100%;
+    margin-right: 100px;
+}
+
+
+.title h1 {
+    font-style: normal;
+    font-weight: 900;
+    line-height: 0.9;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 3.5em; /* Ajustez la taille de la police selon vos préférences */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* Utilisation de la police système */    
+}
+
+.title p {
+    font-size: 20px;
+    color: #1D1F38;
+    margin-top: -2px;
+}
+
+.test {
+    padding: 2px;
+    background-color: #BDBFF1;
+    color: white;
+}
+
+.title {
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.values-section {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.value-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.value-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.value-description {
+    color: #878787;
+}
+
+.value img {
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Définissez le rayon pour créer un cercle */
+    background-color: #BDBFF1;
+}
+
+button {
+    padding: 15px;
+    background-color: #BDBFF1;
+    color: white;
+    min-width: 250px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid white;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    padding: 15px;
+    background-color: white;
+    color: #BDBFF1;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid #BDBFF1;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    min-width: 250px;
+}
+
+.values {
+    display: flex;
+    padding: 40px;
+    gap: 50px;
+}
+
+
+/* Media query pour les écrans petits (jusqu'à 425px) */
+@media screen and (max-width: 425px) {
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us__description {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .about-us__img {
+        display: none;
+    }
+    
+
+    .cercle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .title h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .about-us p {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .title {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .values {
+        flex-direction: column;
+    }
+}
+
+/* Media query pour les écrans moyens (de 426px à 769px) */
+@media screen and (min-width: 426px) and (max-width: 769px) {
+    .about-us__description {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .about-us__img {
+        display: none;
+    }
+
+    .cercle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .title h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .about-us p {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .title {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Media query pour les grands écrans (à partir de 770px) */
+@media screen and (min-width: 770px) {
+
+    .about-us__description {
+        width: 60%;
+        margin-top: 100px;
+    }
+
+    .about-us__img {
+        display: flex;
+        width: 40%;
+        margin-top: 150px;
+    }
+
+    .cercle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .about-us p {
+        padding: 40px;
+        text-align: left;
+    }
+
+    .title {
+        margin-left: 40px;
+        text-align: left;
+    }
+}

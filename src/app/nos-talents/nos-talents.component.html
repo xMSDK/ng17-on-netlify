@@ -1,0 +1,16 @@
+
+<div class="title">
+    <h1> Nos <span class="test">Talents</span></h1>
+</div>
+
+<div class="grid-container">
+    @for (talent of talents; track talent) {
+        <app-talents-item
+            [imageUrl]="talent.imageUrl"
+            [altText]="talent.altText"
+            [tiktok]="talent.tiktok"
+            [instagram]="talent.instagram"
+            [name]="talent.name"
+        ></app-talents-item>
+      }
+</div>

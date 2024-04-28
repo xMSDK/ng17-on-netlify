@@ -1,0 +1,37 @@
+[
+    {
+        "imageUrl": "assets/ethan-berrebi.jpg",
+        "altText": "Ethan",
+        "instagram": "195K",
+        "tiktok": "2,5M",
+        "name": "Ethan"
+    },
+    {
+        "imageUrl": "assets/loun-vct.jpg",
+        "altText": "Loun",
+        "instagram": "33K",
+        "tiktok": "328K",
+        "name": "Ethan"
+    },
+    {
+        "imageUrl": "assets/jordy-stan.jpg",
+        "altText": "Jordy",
+        "instagram": "28,3K",
+        "tiktok": "453,6K",
+        "name": "Jordy"
+    },
+    {
+        "imageUrl": "assets/odellia.jpg",
+        "altText": "Odellia",
+        "instagram": "14,2K",
+        "tiktok": "152,4K",
+        "name": "Odellia"
+    },
+    {
+        "imageUrl": "assets/shirel-sams.jpg",
+        "altText": "Shirel",
+        "instagram": "60K",
+        "tiktok": "300K",
+        "name": "Shirel"
+    }
+]

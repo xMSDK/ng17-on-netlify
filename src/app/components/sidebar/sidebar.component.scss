@@ -1,0 +1,136 @@
+
+.sidebar {
+    width: 350px;
+    height: 100%;
+    background-image: url('/assets/fond.jpeg');
+    position: fixed;
+    top: 0;
+    left: -350px;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .transparent {
+    background-color: transparent;
+    background-image: none;
+  }
+  
+.sidebar__burger-menu {
+  z-index: 999;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: black;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.sidebar__close-button {
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: black;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 15px;
+    margin-top: 50px;
+    margin-left: -15px;
+}
+
+.sidebar ul li {
+    padding: 15px 15px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.sidebar ul li a { 
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.sidebar__links__items__letter {
+    position: relative;
+
+}
+
+.sidebar ul li:hover .sidebar__links__items__letter-e {
+    width: 100px;
+  }
+
+
+.sidebar__links___items__horizontal-bar-mid,
+.sidebar__links___items__horizontal-bar-top,
+.sidebar__links___items__horizontal-bar-bottom {
+    position: absolute;
+    transform: translateY(-30%);
+    width: 0;
+    background-color: white;
+    margin-left: -6px;
+    transition: width 0.3s ease, margin-left 0.3s ease;
+}
+
+
+
+  .sidebar ul li:hover .sidebar__links___items__horizontal-bar-top,
+  .sidebar ul li:hover .sidebar__links___items__horizontal-bar-mid,
+  .sidebar ul li:hover .sidebar__links___items__horizontal-bar-bottom {
+    width: 100%;
+  }
+  
+
+  .sidebar ul li:hover span[sidebar__links__items__letter-e-end] {
+    margin-left: 100px;
+  }
+  
+
+  .sidebar ul li:hover .sidebar__links___items__horizontal-bar-mid {
+    height: 2px;
+    background-color: black;
+    width: 100px;
+    margin-top: 8.5px;
+  }
+
+  .sidebar ul li:hover .sidebar__links___items__horizontal-bar-top {
+    height: 2px;
+    background-color: black;
+    width: 100px;
+    margin-top: 4px;
+  }
+
+
+  .sidebar ul li:hover .sidebar__links___items__horizontal-bar-bottom {
+    height: 2px;
+    background-color: black;
+    width: 100px;
+    margin-top: 13.5px;
+  }
+
+  .sidebar__links__items__letter-e-end {
+    margin-left: -4px;
+  }
+  .sidebar ul li:hover .sidebar__links__items__letter-e-end {
+    margin-left: 96px;
+  }
+
+  .initial {
+
+    color: black;
+  }

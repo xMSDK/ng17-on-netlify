@@ -1,0 +1,69 @@
+.grid-item {
+    display: inline-block;
+    position: relative;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.image-container {
+    position: relative;
+}
+
+.overlay {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.grid-item .image-container:hover .overlay {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.overlay .name,
+.overlay .surname {
+    color: white;
+    font-weight: bold;
+}
+
+.overlay .surname {
+    margin-top: 5px;
+}
+
+.grid-item__identity {
+    display: flex;
+    justify-content: space-around;
+    color: #1D1F38;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.overlay img {
+    width: 20px;
+}
